@@ -12,6 +12,11 @@
   display: flex;
 }
 
+.nav-brand {
+  text-decoration: none;
+  color: rgb(242, 78, 79);
+}
+
 .nav-item {
   margin: 1rem;
 }
