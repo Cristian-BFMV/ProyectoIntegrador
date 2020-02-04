@@ -5,6 +5,7 @@
   align-items: center;
   background-color: rgb(42, 41, 46);
   color: rgb(230, 230, 230);
+  position: relative;
 }
 
 .nav-list {
@@ -30,4 +31,35 @@
 
 .nav-link:hover {
   color: rgba(230, 230, 230, 0.5);
+}
+
+.burger-menu {
+  display: none;
+  width: 2.5rem;
+}
+
+.burger-menu > div {
+  height: 0.3rem;
+  background-color: rgb(230, 230, 230);
+  margin: 3px;
+  border-radius: 2px;
+}
+
+@media only screen and (max-width: 910px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .burger-menu {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-list {
+    flex-flow: column wrap;
+    position: absolute;
+    top: 10vh;
+    transform: translateX(260%);
+    background-color: rgb(42, 41, 46);
+  }
 }

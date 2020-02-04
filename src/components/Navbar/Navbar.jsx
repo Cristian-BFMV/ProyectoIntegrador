@@ -37,6 +37,11 @@ const Navbar = () => {
           </a>
         </li>
       </ul>
+      <div className="burger-menu">
+        <div className="line1"></div>
+        <div className="line2"></div>
+        <div className="line3"></div>
+      </div>
     </nav>
   );
 };
