@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import './Navbar.css';
+
 const Navbar = () => {
   const activeLink = { color: 'rgba(230, 230, 230, 0.5)' };
   const navSlide = () => {

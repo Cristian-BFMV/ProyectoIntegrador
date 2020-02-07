@@ -7,10 +7,10 @@
 }
 
 form {
-  width: 35rem;
+  width: 30%;
   border-radius: 0.6rem;
   box-shadow: 0px 0px 5px 0px rgba(34, 34, 34, 0.5);
-  padding: 5rem;
+  padding: 3rem;
 }
 label {
   font-size: 18px;
@@ -18,7 +18,7 @@ label {
 }
 input {
   display: block;
-  width: 100%;
+  width: 95%;
   margin: 1rem 0;
   padding: 0.6rem 1rem 0.6rem 0.3rem;
   border: 1px solid rgb(141, 141, 141);
@@ -48,4 +48,17 @@ input:focus {
 .signin-btn:hover {
   background-color: white;
   color: rgb(242, 78, 79);
+}
+
+@media only screen and (max-width: 540px) {
+  form {
+    width: 50%;
+  }
+
+  input {
+    width: 90%;
+  }
+  .signin-btn {
+    width: 100%;
+  }
 }

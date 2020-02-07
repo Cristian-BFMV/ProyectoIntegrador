@@ -15,7 +15,7 @@
 .nav-list {
   display: flex;
   justify-content: space-around;
-  flex: 0 0 40%;
+  flex: 0 0 60%;
   list-style: none;
 }
 
@@ -50,9 +50,9 @@
   .nav-list {
     position: absolute;
     right: 0px;
-    top: 8vh;
-    height: 90vh;
-    background-color: rgba(42, 41, 46, 0.95);
+    top: 7vh;
+    height: 90.7vh;
+    background-color: rgba(42, 41, 46, 0.9);
     flex-direction: column;
     width: 100%;
     justify-content: space-around;
@@ -79,69 +79,3 @@
     transform: rotate(45deg) translate(-5px, -6px);
   }
 }
-
-/* .main-nav {
-  display: flex;
-  height: 10vh;
-  justify-content: space-around;
-  align-items: center;
-  background-color: rgb(42, 41, 46);
-  color: rgb(230, 230, 230);
-  position: relative;
-}
-
-.nav-list {
-  list-style: none;
-  display: flex;
-}
-
-.nav-brand {
-  text-decoration: none;
-  color: rgb(242, 78, 79);
-}
-
-.nav-item {
-  margin: 1rem;
-}
-
-.nav-item > .nav-link {
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: rgb(230, 230, 230);
-}
-
-.nav-link:hover {
-  color: rgba(230, 230, 230, 0.5);
-}
-
-.burger-menu {
-  display: none;
-  width: 2.5rem;
-}
-
-.burger-menu > div {
-  height: 0.3rem;
-  background-color: rgb(230, 230, 230);
-  margin: 3px;
-  border-radius: 2px;
-}
-
-@media only screen and (max-width: 910px) {
-  body {
-    overflow-x: hidden;
-  }
-
-  .burger-menu {
-    display: block;
-    cursor: pointer;
-  }
-
-  .nav-list {
-    flex-flow: column wrap;
-    position: absolute;
-    top: 10vh;
-    transform: translateX(260%);
-    background-color: rgb(42, 41, 46);
-  }
-} */

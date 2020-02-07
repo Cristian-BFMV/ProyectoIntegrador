@@ -25,7 +25,7 @@ const SignIn = () => {
           <input
             type="email"
             name="email"
-            placeholder="email"
+            placeholder="Email"
             value={email}
             onChange={event => handleChange(event, setEmail)}
           />

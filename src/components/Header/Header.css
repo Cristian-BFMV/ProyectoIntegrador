@@ -6,7 +6,7 @@ header {
   justify-content: center;
   align-items: center;
   background-image: url('../../header.jpg');
-
+  background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
   position: relative;
@@ -31,4 +31,14 @@ header::after {
 
 .header-brand {
   text-align: center;
+}
+
+@media only screen and (max-width: 536px) {
+  header {
+    height: 30vh;
+  }
+  .header-content {
+    flex: 0 0 80%;
+    font-size: 15px;
+  }
 }
