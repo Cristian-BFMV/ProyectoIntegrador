@@ -1,0 +1,68 @@
+.home-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  min-height: 90vh;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    'brand brand'
+    'work work';
+  gap: 2rem;
+}
+.brand {
+  color: rgb(242, 78, 79);
+  letter-spacing: 2px;
+}
+.brand-container {
+  grid-area: brand;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-flow: column wrap;
+}
+img {
+  width: 80%;
+}
+
+.work-container {
+  grid-area: work;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: 'restaurant contract';
+  gap: 2rem;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  border-radius: 10px;
+  min-height: 20rem;
+  max-height: 25rem;
+  min-width: 20rem;
+  max-width: 25rem;
+  padding: 0 2rem;
+  box-shadow: 5px 8px 5px 5px rgba(83, 83, 83, 0.5);
+}
+
+.restaurant-container {
+  grid-area: restaurant;
+}
+
+.contract-container {
+  grid-area: contract;
+}
+
+@media only screen and (max-width: 880px) {
+  .work-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+      'restaurant'
+      'contract';
+  }
+}
